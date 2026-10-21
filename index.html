@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Social Media Login Page</title>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <main>
+      <form id="form">
+        <fieldset id="container">
+          <h1>Create Account</h1>
+          <p>Please enter your details</p>
+          <label id="name-label" for="fullname">Full Name</label>
+          <br>
+          <input id="fullname" name="fullname" value="name" type="text" placeholder="Enter your full name" required>
+          <br><br>
+          <label id="email-label" for="email">Email Address</label>
+          <br>
+          <input id="email" name="email" value="email" type="email" placeholder="Enter your email" required>
+          <br><br>
+          <label id="password-label" for="password">Password</label>
+          <br>
+          <input id="password" name="password" value="password" type="password" placeholder="Create a password"  title="Password must contain at least 8 characters, one uppercase letter, one number, and one special character."
+  required minlength="8" pattern="(?=.*[A-Z])(?=.*[0-9])(?=.*[^A-Za-z0-9]).{8,}" maxlength="16">
+          <br><br>
+          <label id="password-confirm-label" for="password-confirm">Confirm Password</label>
+          <br>
+          <input id="password-confirm" name="password-confirm" value="password-confirm" type="password"  title="Password must contain at least 8 characters, one uppercase letter, one number, and one special character."
+  placeholder="Confirm your password" minlength="8" pattern="(?=.*[A-Z])(?=.*[0-9])(?=.*[^A-Za-z0-9]).{8,}" maxlength="16" required>
+          <br><br>
+          <label id="gender-label" for="gender">Gender</label>
+          <br>
+          <input
+            id="male" 
+            type="radio"
+            name="gender-choice"
+            value="male">
+          <label for="male" name="male-label">Male</label>
+          <input
+            id="female" 
+            type="radio"
+            name="gender-choice"
+            value="male">
+          <label for="female" name="female-label">Female</label>
+          <input
+            id="other" 
+            type="radio"
+            name="gender-choice"
+            value="other">
+          <label for="other" name="other">Other</label>
+          <br><br>
+          <input
+            type="checkbox"
+            name="agreement"
+            id="agreement"
+            value="agreement" required>
+          <label for="agreement" id="agreement-label">I agree to the <a href="https://www.expensify.com/">terms & conditions</a> and <a href="https://www.expensify.com/">privacy policy</a></label>
+          <br>
+          <button type="submit" id="submit" name="submit" value="submit">Submit</button>
+        </fieldset>
+      </form>
+    </main>
+  </body>
+</html>
